@@ -1,6 +1,6 @@
 CREATE DATABASE ACME_Medical;
 USE ACME_Medical;
---creates database
+-- creates database
 
 CREATE TABLE IF NOT EXISTS `Patients` (
   `patientID` int(11) NOT NULL AUTO_INCREMENT,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `Patients` (
   `other_conditions` varchar(100) NOT NULL,
   PRIMARY KEY (`patientID`)
 )
---created patients table
+-- created patients table
 
 -- CREATE USER
 CREATE USER 'kermit'@'localhost' IDENTIFIED BY 'sesame';
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `Medications` (
 	ON DELETE CASCADE
   	ON UPDATE CASCADE
 )
---created medication table
+-- created medication table
 GRANT SELECT, INSERT, UPDATE ON Medications TO 'kermit'@'localhost';
 
 
